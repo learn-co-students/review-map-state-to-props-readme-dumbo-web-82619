@@ -37,5 +37,8 @@ const mapStateToProps = (state) => {
   debugger;
   return { items: state.items }
 }
+//connect adds the return value of mapStateToProps to this components props
 
 export default connect(mapStateToProps)(App);
+//connect function "connects" redux (store) to react (components)
+//whatever function we pass into connect is called every time state changes
